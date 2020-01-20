@@ -1,0 +1,17 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../IMG/bg-top.svg), url(../IMG/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top right, center bottom;
+}
+/*# sourceMappingURL=style.css.map */
