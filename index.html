@@ -5,50 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pricing-Component-With-Toggle</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--Custom CSS-->
     <link rel="stylesheet" href="../CSS/style.css">
     <!--Google Font-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="../JS/toggle.js"></script>
 </head>
 <body>
+    <img src="IMG/bg-top.svg" alt="top background" class="bg-top">
     <h1 class="homepage-h1">Our Pricing</h1>
     <div class="switch-container">
         <h2 class="annual-text">Annually</h2>
         <label class="switch">
-            <input type="checkbox">
+            <input type="checkbox" onclick="toggleSwitch()" class="switch-box" id="switch-box" checked>
             <span class="slider round"></span>
         </label>
         <h2 class="monthly-text">Monthly</h2>
     </div>
-    <div class="card-container">
-        <div class="professional-container">
-            <h5 class="professional-h1">
-                Professional
-            </h5>
-            <h1 class="professional-price">
-                $249.99
-            </h1>
-            <div class="top-line"></div>
-            <div class="professional-text">
-                <h5>1TB Storage</h5>
+    <div class="flex-container">
+        <div class="item1">
+            <div class="basic-card-container">
+                <div class="basic-container">
+                    <h5 class="basic-h1">
+                        Basic
+                    </h5>
+                    <h1 class="basic-monthly invisible"><span>&dollar;</span>19.99</h1>
+                    <h1 class="basic-annual"><span>&dollar;</span>199.99</h1>
+                    <div class="basic-top-line"></div>
+                    <div class="basic-text">
+                        <h5>500GB Storage</h5>
+                    </div>
+                    <div class="basic-mid-line"></div>
+                    <div class="basic-text">
+                        <h5>2 Users Allowed</h5>
+                    </div>
+                    <div class="basic-mid-line2"></div>
+                    <div class="basic-text">
+                        <h5>
+                            Send up to 3 GB
+                        </h5>
+                    </div>
+                    <div class="basic-bottom-line"></div>
+                    <div class="basic-button-container">
+                        <button class="basic-button">
+                            <h1>LEARN MORE</h1>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="mid-line"></div>
-            <div class="professional-text">
-                <h5>5 Users Allowed</h5>
+        </div>
+        <div class="item2">
+            <div class="professional-card-container">
+                <div class="professional-container">
+                    <h5 class="professional-h1">
+                        Professional
+                    </h5>
+                    <h1 class="professional-monthly invisible"><span>&dollar;</span>24.99</h1>
+                    <h1 class="professional-annual"><span>&dollar;</span>249.99</h1>
+                    <div class="professional-top-line"></div>
+                    <div class="professional-text">
+                        <h5>1TB Storage</h5>
+                    </div>
+                    <div class="professional-mid-line"></div>
+                    <div class="professional-text">
+                        <h5>5 Users Allowed</h5>
+                    </div>
+                    <div class="professional-mid-line2"></div>
+                    <div class="professional-text">
+                        <h5>
+                            Send up to 10 GB
+                        </h5>
+                    </div>
+                    <div class="professional-bottom-line"></div>
+                    <div class="professional-button-container">
+                        <button class="professional-button">
+                            <h1>LEARN MORE</h1>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="mid-line2"></div>
-            <div class="professional-text">
-                <h5>
-                    Send up to 10 GB
-                </h5>
-            </div>
-            <div class="bottom-line"></div>
-            <div class="professional-button-container">
-                <button class="professional-button">
-                    <h1>LEARN MORE</h1>
-                </button>
+        </div>
+        <div class="item3">
+            <div class="master-card-container">
+                <div class="master-container">
+                    <h5 class="master-h1">
+                        Master
+                    </h5>
+                    <h1 class="master-monthly invisible"><span>&dollar;</span>39.99</h1>
+                    <h1 class="master-annual"><span>&dollar;</span>399.99</h1>
+                    <div class="master-top-line"></div>
+                    <div class="master-text">
+                        <h5>2TB Storage</h5>
+                    </div>
+                    <div class="master-mid-line"></div>
+                    <div class="master-text">
+                        <h5>10 Users Allowed</h5>
+                    </div>
+                    <div class="master-mid-line2"></div>
+                    <div class="master-text">
+                        <h5>
+                            Send up to 20 GB
+                        </h5>
+                    </div>
+                    <div class="master-bottom-line"></div>
+                    <div class="master-button-container">
+                        <button class="master-button">
+                            <h1>LEARN MORE</h1>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <img src="IMG/bg-bottom.svg" alt="bottom background" class="bg-bottom">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>

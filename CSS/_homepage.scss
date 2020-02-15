@@ -1,7 +1,28 @@
+.bg-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-height: 70%;
+    max-width: 50%;
+    z-index: 0;
+}
+  
+.bg-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-height: 40%;
+    max-width: 50%;
+    z-index: 0;
+}
+
 .homepage-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: $grayish-blue;
-    margin-top: 50px;
+    margin: -50px 0px 0px 0px;
 }
 
 .annual-text {
@@ -86,15 +107,87 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-.card-container {
+.flex-container {
     display: flex;
     flex-flow: row;
     justify-content: center;
+    height: auto;
+    z-index: 1;
+    margin: 40px 0px 0px 0px;
+}
+
+.basic-card-container {
+    display: flex;
+    z-index: 1;
+    justify-content: center;
     text-align: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #a3a8f0, #696fdd);
-    margin: 0px 580px 0px 580px;
+    height: 400px;
+    background-color: #ffffff;
+    margin: 12px 0px 0px 0px;
+    padding: 10px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    box-shadow: 0px 0px 12px -8px;
+    width: 350px;
+}
+
+.basic-containter{
+    text-align: center;
+}
+
+.basic-h1 {
+    color: #000000;
+}
+
+.basic-price {
+    color: #000000;
+    font-size: 42px;
+}
+
+.basic-text {
+    color: #000000;
+}
+
+.basic-button-container {
+    margin: 20px 0px 20px 0px;
+}
+
+.basic-button {
+    border: none;
+    background-image: linear-gradient(to right, #a3a8f0, #696fdd );
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    width: 200px;
+    height: 35px;
+    
+    > h1 {
+        font-size: 12px;
+    }
+}
+
+.basic-button:hover {
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid #696fdd;
+    color: #696fdd;
+    cursor: pointer;
+}
+
+.professional-card-container {
+    display: flex;
+    z-index: 2;
+    flex-flow: row nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #a3a8f0, #696fdd);
+    margin: 0px 0px 0px 0px;
+    padding: 10px;
     border-radius: 14px;
+    width: 350px;
+    height: auto;
 }
 
 .professional-containter{
@@ -112,30 +205,6 @@ input:checked + .slider:before {
 
 .professional-text {
     color: #ffffff;
-}
-
-.top-line {
-    border-top: 1px solid #ffffff;
-    margin: 10px;
-    width: 200px;
-}
-
-.mid-line {
-    border-top: 1px solid #ffffff;
-    margin: 10px;
-    width: 200px;
-}
-
-.mid-line2 {
-    border-top: 1px solid #ffffff;
-    margin: 10px;
-    width: 200px;
-}
-
-.bottom-line {
-    border-top: 1px solid #ffffff;
-    margin: 10px;
-    width: 200px;
 }
 
 .professional-button-container {
@@ -160,4 +229,112 @@ input:checked + .slider:before {
     background-color: transparent;
     border: 1px solid white;
     color: white;
+    cursor: pointer;
+}
+
+.master-card-container {
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 400px;
+    background-color: #ffffff;
+    margin: 12px 0px 0px 0px;
+    padding: 10px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    width: 350px;
+    box-shadow: 0px 0px 12px -8px;
+}
+
+.master-containter{
+    text-align: center;
+}
+
+.master-h1 {
+    color: #000000;
+}
+
+.master-price {
+    color: #000000;
+    font-size: 42px;
+}
+
+.master-text {
+    color: #000000;
+}
+
+.master-button-container {
+    margin: 20px 0px 20px 0px;
+}
+
+.master-button {
+    border: none;
+    background-image: linear-gradient(to right, #a3a8f0, #696fdd );
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    width: 200px;
+    height: 35px;
+    
+    > h1 {
+        font-size: 12px;
+    }
+}
+
+.master-button:hover {
+    background-image: none;
+    background-color: transparent;
+    border: 1px solid #696fdd;
+    color: #696fdd;
+    cursor: pointer;
+}
+
+.professional-top-line {
+    border-bottom: 1px solid #ffffff;
+}
+
+.professional-mid-line {
+    border-bottom: 1px solid #ffffff;
+}
+
+.professional-mid-line2 {
+    border-bottom: 1px solid #ffffff;
+}
+
+.professional-bottom-line {
+    border-bottom: 1px solid #ffffff;
+}
+
+.basic-top-line {
+    border-bottom: 1px solid #696fdd;
+}
+
+.basic-mid-line {
+    border-bottom: 1px solid #696fdd;
+}
+
+.basic-mid-line2 {
+    border-bottom: 1px solid #696fdd;
+}
+
+.basic-bottom-line {
+    border-bottom: 1px solid #696fdd;
+}
+
+.master-top-line {
+    border-bottom: 1px solid #696fdd;
+}
+
+.master-mid-line {
+    border-bottom: 1px solid #696fdd;
+}
+
+.master-mid-line2 {
+    border-bottom: 1px solid #696fdd;
+}
+
+.master-bottom-line {
+    border-bottom: 1px solid #696fdd;
 }

@@ -11,12 +11,12 @@ body, html {
 body {
     margin-top: 0;
     width: 100%;
-    max-width: 1440px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-image: url(../IMG/bg-top.svg), url(../IMG/bg-bottom.svg);
-    background-position: top right, bottom left;
-    background-repeat: no-repeat;
-    background-size: 25%, 25%;
+    justify-content: center;
+    background-color: #f6f6fe;
+    //background-image: url(../IMG/bg-top.svg), url(../IMG/bg-bottom.svg);
+    //background-position: top right, bottom left;
+    //background-repeat: no-repeat;
 }
